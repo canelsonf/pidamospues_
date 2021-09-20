@@ -80,11 +80,10 @@ input{
     margin-right: 10%;
 }
 @media (max-width: 768px){
-    #menu_redes{
-        width: 150%;
-    }
+
     #menumovil{
         display: inline-block;
+        display: block;
         margin-top: 10px;
        
     }
@@ -93,11 +92,16 @@ input{
         position: absolute;
         background: #15CCD6;
         width: 60%;
-        
+        margin-left: -70%;
         transition: all 0.5s;
+    }
+    .menu div{
+        position: none;
+        
     }
     .menu ul{
         flex-direction: column;
+        
     }
     .menu li{
         border-top:1px solid #fff ;
