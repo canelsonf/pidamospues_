@@ -1,0 +1,113 @@
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+#btn-menu{
+    display:none;
+
+}
+#menumovil{
+    width: 10%;
+    display: none;
+}
+.menu{
+    width: 95%;
+    background: #15CCD6;
+    border-bottom: 1px solid #5c8eba;
+    border-right: 1px solid #5c8eba;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.menu ul{
+    justify-content: flex-center;
+    display: flex;
+    border-right: white;  
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    color: #FF4948;
+    padding: 20px;
+    border-radius: 5px;
+    
+
+}
+.menu li a{
+    font-size: 24px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    display:inline-flex; 
+}
+.menu li:hover, li.active {
+    background-color:rgba(255, 73, 72, 0.9);
+    transition: 1s;
+}
+.bot-regist{
+    
+    font-size: 9px;
+    display: inline-block;
+    border-radius: 10px;
+    padding:2px 10px ;
+    text-decoration: none; 
+    background-color: rgba(255, 73, 72);
+}
+ul.show{
+    top: 100px;
+}
+#formul{
+    align-items: center;
+}
+#formul legend{
+    font-size: 28px;
+}
+#formul legend label{
+    align-items: center;
+}
+#form{
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+input{
+    margin-top: 10px;
+    padding-left: 10px;  
+}
+#formulario{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+@media (max-width: 768px){
+    #menu_redes{
+        width: 150%;
+    }
+    #menumovil{
+        display: inline-block;
+        margin-top: 10px;
+       
+    }
+    
+    .menu{
+        position: absolute;
+        background: #15CCD6;
+        width: 60%;
+        
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top:1px solid #fff ;
+    }
+    #btn-menu:checked ~ .menu {
+        display: absolute;
+        background: #15CCD6;
+        margin: 0px;
+        
+    }
+
+}
+
